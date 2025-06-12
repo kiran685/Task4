@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio + Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="task.css" />
+</head>
+<body>
+  <nav>
+    <h1>My Portfolio</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#todo">To-Do</a></li>
+      <li><a href="#product">Shop</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
+  </nav>
+  <section id="about">
+    <h2>About</h2>
+    <p>Welcome! I’m a developer passionate about building responsive and interactive web apps.</p>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>To-Do List with LocalStorage</li>
+      <li>Shopping Cart & Product Filtering App</li>
+    </ul>
+  </section>
+  <section id="todo">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter task..." />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+  <section id="product">
+    <h2>Shop Products</h2>
+    <label>Category:
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="books">Books</option>
+        <option value="clothes">Clothes</option>
+      </select>
+    </label>
+    <label>Sort by:
+      <select id="sortBy">
+        <option value="default">Default</option>
+        <option value="priceLow">Price: Low to High</option>
+        <option value="ratingHigh">Rating: High to Low</option>
+      </select>
+    </label>
+    <div id="productContainer"></div>
+  </section>
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cartList"></ul>
+    <p id="cartTotal"></p>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: you@example.com</p>
+  </section>
+  <footer>&copy; 2025  My Page. All rights reserved.</footer>
+  <script src="task.js"></script>
+</body>
+</html>
